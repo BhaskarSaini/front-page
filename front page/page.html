@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<script type="text/javascript" src="jquery-1.11.3.js"></script>
+<body>
+<script>
+	$(function(){
+		$("#sphere img").click(function(){
+			$("#home,#phone,#people,#question").toggle("clip");
+		});
+		$("#phone").click(function(){
+			$("#smartphone,#email,#route").toggle("clip");
+		});
+		$("#smartphone").on({
+			mouseover:function() {
+				$("#section1").toggle("slide");
+				$("#section1 h3").fadeIn(1000);
+				$("#section2").toggle("slide");
+				$("#section2 h4").fadeIn(1000);
+			},
+			mouseout:function() {
+				$("#section1").toggle("slide");
+				$("#section2").toggle("slide");
+			}
+		});
+		$("#email").on({
+			mouseover:function() {
+				$("#section3").toggle("slide");
+				$("#section3 h3").fadeIn(1000);
+				$("#section4").toggle("slide");
+				$("#section4 h4").fadeIn(1000);
+			},
+			mouseout:function() {
+				$("#section3").toggle("slide");
+				$("#section4").toggle("slide");
+			}
+		});
+		$("#route").on({
+			mouseover:function() {
+				$("#section5").toggle("slide");
+				$("#section5 h3").fadeIn(1000);
+				$("#section6").toggle("slide");
+				$("#section6 h4").fadeIn(1000);
+			},
+			mouseout:function() {
+				$("#section5").toggle("slide");
+				$("#section6").toggle("slide");
+			}
+		});
+	});	
+</script>	
+<img id="ab" src="5.jpg">
+		<div id="sphere"><a href="#"><img src="images.png"></a></div>
+		<div id="show">
+				<div id="home"><a href="#"><p>HOME</p><img src="home.png"></a></div>
+				<div id="phone"><a href="#"><p>CONTACT US</p><img src="phone.jpg"></a></div>
+				<div id="people"><a href="#"><p>ABOUT US</p><img src="people.jpg"></a></div>
+				<div id="question"><a href="#"><p>HELP</p><img src="question.jpg"></a></div>
+		</div>
+		<div id="matter of contact">
+			<div id="smartphone"><a href="#"><img src="smartphone.png"></a></div>
+			<div id="email"><a href="#"><img src="email.png"></a></div>
+			<div id="route"><a href="#"><img src="route.png"></a></div>
+			<div id="section1">
+				<h3>PHONE NO.</h3>
+			</div>	
+			<div id="section2">
+				<h4>7983506303</h4>
+			</div>	
+			<div id="section3">
+				<h3>EMAIL ADDRESS</h3>
+			</div>	
+			<div id="section4">
+				<h4>bhaskarsaini12@gmail.com</h4>
+			</div>	
+			<div id="section5">
+				<h3>ADDRESS</h3>
+			</div>	
+			<div id="section6">
+				<h4>JSS ACADEMY OF TECHNICAL EDUCATION,NOIDA</h4>
+			</div>
+		</div>	
+</body>
+</html>
